@@ -23,6 +23,7 @@ function claim()
     entity.factionIndex = faction.index
     entity:addScriptOnce("minefounder.lua")
     entity:addScriptOnce("sellobject.lua")
+    entity:setValue("valuable_object", nil)
     -- hook for other scripts
     beforeEndingTheScript(ok, msg, entity)
     terminate()
