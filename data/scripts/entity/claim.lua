@@ -24,6 +24,7 @@ function claim()
     entity:addScriptOnce("minefounder.lua")
     entity:addScriptOnce("sellobject.lua")
     entity:setValue("valuable_object", nil)
+    entity:setValue("map_marker", "Claimed Asteroid"%_T)
     -- hook for other scripts
     beforeEndingTheScript(ok, msg, entity)
     terminate()
